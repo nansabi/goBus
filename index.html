@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoBus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div style="font-size: xx-large;">
+            <i class="fa-solid fa-bus"></i>
+            <b> GO<span class="text-color">BUS</span></b>
+        </div>
+        <div class="navbar-links">
+            <div class="navbar-link">
+                <i class="fa-solid fa-envelope"></i>
+                <b>Offers</b>
+            </div>
+            <div class="navbar-link">
+                <i class="fa-regular fa-circle-question"></i>
+                <b>Help</b>
+            </div>
+            <div class="navbar-link">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <b>Login</b>
+            </div>
+            <div class="navbar-link">
+                <i class="fa-solid fa-user-plus"></i>
+                <b>Signp</b>
+            </div>
+        </div>
+    </div>
+    <div class="video-section">
+        <video autoplay muted loop playsinline>
+            <source src="GOBUS.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Centered content over video -->
+
+        <div class="overlay-content">
+            <h1>GOBUS – Book Smart. Travel Easy</h1>
+            <div class="input-container">
+                <input type="text" id="fromCity" placeholder="From City" />
+                <input type="text" id="toCity" placeholder="To City" />
+                <input type="date" id="travelDate" />
+                <button class="submit-btn" onclick="searchBuses()">Search Bus</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="next-section">
+        <h1>Why Choose GoBus ?</h1>
+        <div class="box-1">
+            <i class="fa-solid fa-square-check"></i>
+            <h4>Instant Booking</h4>
+            <p>Book your bus tickets instantly with real-time availabilty </p>
+        </div>
+        <div class="box-1">
+            <i class="fa-solid fa-bus"></i>
+            <h4>Wide Network</h4>
+            <p>We cover cities 2000+ buses across india</p>
+        </div>
+        <div class="box-1">
+            <i class="fa-solid fa-user-shield"></i>
+            <h4>Safe and Secure</h4>
+            <p>Verified buses with tracling CCTV and emergency support</p>
+        </div>
+    </div>
+    <div class="next-section1">
+        <h1>Need Help? 🤝</h1>
+        <div class="box-2">
+            <h3>How do i book a ticket</h3>
+            <p>You can search buses ,select your seats ,and make payments securly online through GoBus </p>
+        </div>
+        <div class="box-2">
+            <h3>Can i cancel my tickets ?</h3>
+            <p>Yes! You can cancel anytime before departure,refund will processed to your payment account</p>
+        </div>
+        <div class="box-2">
+            <h3>Whom should i contact for support</h3>
+            <p>Contact our 24x7 support team via email at support@gmail.com or call at us 1800-123-4567</p>
+        </div>
+    </div>
+    <div class="next-section2">
+        <h1><span class="black-text">Popular</span> <span class="red-text">Routes</span></h1>
+
+        <div class="routes-container">
+            <div class="box-3">
+                <i class="fa-solid fa-route"></i>
+                <h3>Chennai - Bengaluru</h3>
+                <p>15+ buses daily</p>
+            </div>
+            <div class="box-3">
+                <i class="fa-solid fa-route"></i>
+                <h3>Hyderabad - Vijayawada</h3>
+                <p>20+ options available</p>
+            </div>
+            <div class="box-3">
+                <i class="fa-solid fa-route"></i>
+                <h3>Coimbatore - Madurai</h3>
+                <p>AC / Non-AC buses</p>
+            </div>
+            <div class="box-3">
+                <i class="fa-solid fa-route"></i>
+                <h3>Trichy - Chennai</h3>
+                <p>Volvo sleeper available</p>
+            </div>
+            <div class="box-3">
+                <i class="fa-solid fa-route"></i>
+                <h3>Madurai - Tirunelveli</h3>
+                <p>Luxury and budget buses</p>
+            </div>
+            <div class="box-3">
+                <i class="fa-solid fa-route"></i>
+                <h3>Salem - Coimbatore</h3>
+                <p>Every hour departure</p>
+            </div>
+        </div>
+    </div>
+    <div class="next-section3">
+        <h1><span class="black-text">What Our</span> <span class="red-text">Customers Say</span> 🧡</h1>
+
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1" class="profile-pic">
+                <p>"Booking with GoBus was super easy and fast! Highly recommended."</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h4>- Priya S</h4>
+            </div>
+
+            <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 2" class="profile-pic">
+                <p>"Reliable and punctual buses. Made my travel experience stress-free."</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                </div>
+                <h4>- Karthik M</h4>
+            </div>
+
+            <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer 3" class="profile-pic">
+                <p>"Affordable and safe travel for my entire family. Love GoBus!"</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <h4>- Anitha D</h4>
+            </div>
+        </div>
+    </div>
+    <div class="download-section">
+        <div class="download-text">
+            <h1><span class="black-text">How to Download</span> <span class="red-text">GoBus</span> 📱</h1>
+            <p>Download the GoBus app to book tickets, track buses, and get exclusive offers directly on your phone.</p>
+
+            <div class="store-buttons">
+                <div class="store-button">
+                    <i class="fa-brands fa-google-play"></i>
+                    <div class="store-text">
+                        <h6>GET IT ON</h6>
+                        <h2>Google Play</h2>
+                    </div>
+                </div>
+
+                <div class="store-button">
+                    <i class="fa-brands fa-apple"></i>
+                    <div class="store-text">
+                        <h6>Download on the</h6>
+                        <h2>App Store</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Android Phone" width="100">
+        </div>
+    </div>
+    <div class="how-it-works-section">
+        <h1>How It Works</h1>
+        <div class="how-it-works-container">
+            <div class="how-box">
+                <i class="fas fa-search-location icon"></i>
+                <h3>Search Buses</h3>
+                <p>Enter your location & date to explore available buses.</p>
+            </div>
+            <div class="how-box">
+                <i class="fas fa-chair icon"></i>
+                <h3>Choose Your Seat</h3>
+                <p>Select your preferred seat and comfortable bus type.</p>
+            </div>
+            <div class="how-box">
+                <i class="fas fa-credit-card icon"></i>
+                <h3>Make Payment</h3>
+                <p>Pay securely using UPI, credit/debit cards or wallets.</p>
+            </div>
+            <div class="how-box">
+                <i class="fas fa-ticket-alt icon"></i>
+                <h3>Get E-Ticket</h3>
+                <p>Instant e-ticket delivered to your mobile and email.</p>
+            </div>
+            <div class="how-box">
+                <i class="fas fa-route icon"></i>
+                <h3>Track & Travel</h3>
+                <p>Track your bus in real-time and enjoy a smooth ride.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Column 1 -->
+            <div class="footer-column">
+                <h3>GoBus</h3>
+                <p>Your trusted partner for safe, fast, and affordable travel across India.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book Tickets</a></li>
+                    <li><a href="#">Popular Routes</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h4>Top Cities</h4>
+                <ul>
+                    <li><a href="#">Chennai</a></li>
+                    <li><a href="#">Bengaluru</a></li>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Madurai</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone-alt"></i> 1800-123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@gobus.in</p>
+                <p><i class="fas fa-map-marker-alt"></i> 22, Tech Park, Chennai, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GoBus. All rights reserved. | Designed with ❤️ by Team GoBus</p>
+        </div>
+    </footer>
+
+    <!-- Bus Selection Modal -->
+    <div id="busModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Available Bus Routes</h2>
+            <div class="bus-options" id="busOptions"></div>
+        </div>
+    </div>
+
+    <!-- Seat Selection Modal -->
+    <div id="seatModal" class="modal">
+        <div class="modal-content seat-modal-content">
+            <span class="close-seat" onclick="closeSeatModal()">&times;</span>
+            <h2>Select Your Seats</h2>
+            <div class="seat-grid" id="seatGrid"></div>
+            <button class="proceed-to-pay-btn" onclick="openUPIModal()">Proceed to Pay</button>
+        </div>
+    </div>
+
+    <!-- UPI Payment Modal -->
+    <div id="upiModal" class="upi-modal">
+        <div class="upi-modal-box">
+            <span class="upi-close-btn" onclick="closeUPIModal()">&times;</span>
+            <h2 class="upi-title">Complete Your Payment</h2>
+            <p class="upi-subtitle">Select a UPI method:</p>
+            <div class="upi-methods">
+                <button class="upi-method" onclick="handleUPIMethod('Google Pay')">Google Pay</button>
+                <button class="upi-method" onclick="handleUPIMethod('PhonePe')">PhonePe</button>
+                <button class="upi-method" onclick="handleUPIMethod('Paytm')">Paytm</button>
+                <button class="upi-method" onclick="openUpiEntryModal()">Other UPI</button>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Receipt Modal -->
+    <div id="receiptModal" class="modal">
+        <div class="modal-content" id="receiptContent">
+            <!-- Filled dynamically -->
+        </div>
+    </div>
+
+ <!-- Manual UPI Entry Box -->
+<div id="upiEntryBox" class="u-1">
+  <div class="mo-1">
+    <h2>Enter UPI ID</h2>
+    <input type="text" id="upiEntryInput" placeholder="e.g. abhi@upi">
+    <button onclick="submitUpiEntry()">Submit</button>
+    <button onclick="closeUpiEntryModal()">Cancel</button>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
